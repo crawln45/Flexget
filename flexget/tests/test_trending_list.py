@@ -13,11 +13,11 @@ class TestTrendingSerieList(object):
     def test_trending_series(self, execute_task):
         task = execute_task('test_trending_list')
         assert len(task.entries) == 10
-        assert task.entries[0].get('title') == 'The Walking Dead'
-        assert task.entries[1].get('title') == 'Homeland'
+        assert task.entries[0].get('title') == 'The Walking Dead (2010)'
+        assert task.entries[1].get('title') == 'Homeland (2011)'
 
-        assert task.entries[0].get('url') == 'https://api.trakt.tv/shows/1393'
-        assert task.entries[1].get('url') == 'https://api.trakt.tv/shows/1398'
+        assert task.entries[0].get('url') == 'https://trakt.tv/shows/the-walking-dead'
+        assert task.entries[1].get('url') == 'https://trakt.tv/shows/homeland'
 
 class TestTrendingMovieList(object):
     """
@@ -36,8 +36,8 @@ class TestTrendingMovieList(object):
     def test_trending_movies(self, execute_task):
         task = execute_task('test_trending_list')
         assert len(task.entries) == 10
-        assert task.entries[0].get('title') == 'Moana'
-        assert task.entries[1].get('title') == 'Rogue One: A Star Wars Story'
+        assert task.entries[0].get('title') == 'Moana (2016)'
+        assert task.entries[1].get('title') == 'Rogue One: A Star Wars Story (2016)'
 
-        assert task.entries[0].get('url') == 'https://api.trakt.tv/movies/175475'
-        assert task.entries[1].get('url') == 'https://api.trakt.tv/movies/211396'
+        assert task.entries[0].get('url') == 'https://trakt.tv/movies/moana-2016'
+        assert task.entries[1].get('url') == 'https://trakt.tv/movies/rogue-one-a-star-wars-story-2016'
