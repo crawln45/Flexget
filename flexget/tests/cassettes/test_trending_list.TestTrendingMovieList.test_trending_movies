@@ -1,0 +1,41 @@
+interactions:
+  - request:
+      body: null
+      headers:
+        Content-Type: [application/json]
+        trakt-api-key: [57e188bcb9750c79ed452e1674925bc6848bd126e02bb15350211be74c6547af]
+        trakt-api-version: ['2']
+      method: GET
+      uri: https://api.trakt.tv/movies/trending
+    response:
+      body: {string: '[{"watchers":81,"movie":{"title":"Moana","year":2016,"ids":{"trakt":175475,"slug":"moana-2016","imdb":"tt3521164","tmdb":277834}}},{"watchers":76,"movie":{"title":"Rogue
+          One: A Star Wars Story","year":2016,"ids":{"trakt":211396,"slug":"rogue-one-a-star-wars-story-2016","imdb":"tt3748528","tmdb":330459}}},{"watchers":56,"movie":{"title":"Trolls","year":2016,"ids":{"trakt":92063,"slug":"trolls-2016","imdb":"tt1679335","tmdb":136799}}},{"watchers":56,"movie":{"title":"Sing","year":2016,"ids":{"trakt":216570,"slug":"sing-2016","imdb":"tt3470600","tmdb":335797}}},{"watchers":30,"movie":{"title":"Beauty
+          and the Beast","year":2017,"ids":{"trakt":202286,"slug":"beauty-and-the-beast-2017","imdb":"tt2771200","tmdb":321612}}},{"watchers":28,"movie":{"title":"Assassin''s
+          Creed","year":2016,"ids":{"trakt":84393,"slug":"assassin-s-creed-2016","imdb":"tt2094766","tmdb":121856}}},{"watchers":28,"movie":{"title":"Logan","year":2017,"ids":{"trakt":161972,"slug":"logan-2017","imdb":"tt3315342","tmdb":263115}}},{"watchers":26,"movie":{"title":"Why
+          Him?","year":2016,"ids":{"trakt":230555,"slug":"why-him-2016","imdb":"tt4501244","tmdb":356305}}},{"watchers":25,"movie":{"title":"Passengers","year":2016,"ids":{"trakt":172700,"slug":"passengers-2016","imdb":"tt1355644","tmdb":274870}}},{"watchers":21,"movie":{"title":"Hidden
+          Figures","year":2016,"ids":{"trakt":241112,"slug":"hidden-figures-2016","imdb":"tt4846340","tmdb":381284}}}]'}
+      headers:
+        CF-RAY: [34640d26fce27283-AMS]
+        Cache-Control: ['max-age=300, public']
+        Cf-Railgun: [e00007be67 99.99 1.677271 0030 e6be]
+        Connection: [keep-alive]
+        Content-Type: [application/json; charset=utf-8]
+        Date: ['Mon, 27 Mar 2017 17:25:53 GMT']
+        Etag: [W/"93a4cc65d2565423ab0913bd366c8cd4"]
+        Expires: ['Mon, 27 Mar 2017 17:30:41 GMT']
+        Server: [cloudflare-nginx]
+        Set-Cookie: ['__cfduid=d0f956d29450e65cecd457a5c4fbfe18c1490635551; expires=Tue,
+            27-Mar-18 17:25:51 GMT; path=/; domain=.trakt.tv; HttpOnly']
+        Vary: [Accept-Encoding]
+        X-Content-Type-Options: [nosniff]
+        X-Frame-Options: [SAMEORIGIN]
+        X-Pagination-Item-Count: ['799']
+        X-Pagination-Limit: ['10']
+        X-Pagination-Page: ['1']
+        X-Pagination-Page-Count: ['80']
+        X-Request-Id: [370261e5-04d2-43ad-85d1-c91c0d892283]
+        X-Runtime: ['0.043549']
+        X-Trending-User-Count: ['1905']
+        X-Xss-Protection: [1; mode=block]
+      status: {code: 200, message: OK}
+version: 1
